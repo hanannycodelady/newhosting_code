@@ -15,7 +15,7 @@ __pycache__/
 Dockerfile
 docker-compose.yml
 
-# Logs and temporary files
+# Logs and temporary filesd
 *.log
 *.swp
 *.tmp
