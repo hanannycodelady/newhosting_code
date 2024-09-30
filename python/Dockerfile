@@ -8,14 +8,14 @@ ENV PYTHONUNBUFFERED=1
 # Set the working directoryy
 WORKDIR /app
 
-# # Install Python dependencies
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-
-# # Install dependencies
+# # # Install Python dependencies
 # COPY requirements.txt .
-# RUN pip install -r requirements.txt
+# RUN pip install --no-cache-dir -r requirements.txt
+
+
+# Install dependencies
+COPY requirements.txt .
+RUN pip install -r requirements.txt
 
 # Copy the application codee
 COPY . .
