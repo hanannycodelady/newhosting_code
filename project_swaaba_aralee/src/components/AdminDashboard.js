@@ -19,12 +19,13 @@ const AdminDashboard = () => {
 
             try {
                 // Fetch total users
-                const usersResponse = await axios.get('/api/v1/user/Users', {
+                const usersResponse = await axios.get(
+                    '/api/v1/user/Users', {
                     headers: { Authorization: `Bearer ${token}` },
                 });
                 
                 // Fetch contacts
-                const contactsResponse = await axios.get('/api/v2/contact_bp/contact', {
+                const contactsResponse = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/v2/contact_bp/contact`, {
                     headers: { Authorization: `Bearer ${token}` },
                 });
 

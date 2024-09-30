@@ -33,7 +33,7 @@ const CarList = () => {
   useEffect(() => {
     const fetchCars = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:5000/api/v1/cars/all");
+        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}http://127.0.0.1:5000/api/v1/cars/all`);
         if (response.data && response.data.cars) {
           setCars(response.data.cars);
         } else {

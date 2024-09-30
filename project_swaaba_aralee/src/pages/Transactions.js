@@ -12,7 +12,7 @@ const TransactionList = () => {
 
   const fetchTransactions = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:5000/api/v1/transaction', {
+      const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}http://127.0.0.1:5000/api/v1/transaction`, {
         headers: {
           'Content-Type': 'application/json',
         },

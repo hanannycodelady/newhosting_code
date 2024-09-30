@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const order_api = axios.create({
-    baseURL: 'http://127.0.0.1:5000/api/v1/orders/', 
+    baseURL: `${process.env.REACT_APP_BACKEND_URL}http://127.0.0.1:5000/api/v1/orders/`, 
 });
 
 // Function to send the create order request

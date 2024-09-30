@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create an Axios instance with the base URL for the API
 const contact_api = axios.create({
-  baseURL: "http://127.0.0.1:5000/api/v2/contact_blueprint/", 
+  baseURL: `${process.env.REACT_APP_BACKEND_URL}http://127.0.0.1:5000/api/v2/contact_blueprint/`, 
 });
 
 // Function to send contact inquiry data to the backend

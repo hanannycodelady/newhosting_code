@@ -12,7 +12,7 @@ const CarShowcase = () => {
 
   const fetchCarImages = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:5000/api/v1/car_images');
+      const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}http://127.0.0.1:5000/api/v1/car_images`);
       console.log(response.data.car_images); 
       setCarImages(response.data.car_images);
     } catch (error) {
