@@ -8,7 +8,7 @@ __pycache__/
 *.py[cod]
 
 # Test and development files
-.env
+.venv
 .git
 
 # Docker-related files

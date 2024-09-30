@@ -1,0 +1,14 @@
+services:
+  frontend:
+    build:
+      context: ./project_swaaba_aralee
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+
+  backend:
+    build:
+      context: ./python
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
