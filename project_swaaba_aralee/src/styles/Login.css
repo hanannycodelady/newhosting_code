@@ -1,0 +1,179 @@
+/* src/Login.css */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 60px;
+  background-color: #f0f0f0; 
+  position: relative; /* Make it relative to position child elements */
+}
+
+/* For styling text in the header */
+.p1 {
+  color: rgb(253, 252, 252);
+  text-align: center;
+  font-weight: bolder;
+}
+
+.login-card {
+  background: #050505 url('../assets/login 1.png') no-repeat center center;
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 45px;
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.text_area {
+  margin-bottom: 15px;
+}
+
+.text_input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  background-color: #080808;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn:hover {
+  background-color: #070706;
+}
+
+.swaaba {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+}
+
+.swaaba.success {
+  color: rgb(15, 15, 15);
+  font-size: large;
+}
+
+/* Subscribe Section */
+.paragraph, h {
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+
+.paragraph, p {
+  font-size: large;
+  color: rgb(240, 230, 230);
+}
+
+.subscribe_input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Subscribe Card Styles */
+.subscribe-card {
+  height: auto; /* Let height be determined by content */
+  background: #0c0c0c; /* Dark background */
+  border-radius: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  width: 100%; /* Full width */
+  margin-top: -20px; /* Position upwards slightly */
+  position: relative; /* To position the background */
+  z-index: 1; /* Ensure card is above the background */
+}
+
+/* Button Style */
+.subscribe-btn {
+  width: 50%; /* Set width to 50% */
+  padding: 10px;
+  border-radius: 20px;
+  display: inline-block; /* Treats button as an inline block element */
+  text-align: center; /* Ensures text is centered within the button */
+  font-weight: bold; /* Makes the text bold */
+  font-size: 16px; /* Adjust font size if needed */
+  background-color: #008CBA;
+  color: white;
+  border: none; /* Removes default border */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  margin: 0; /* Remove default margin */
+  justify-content: center;
+}
+
+/* Half Background Color below the Subscribe Card */
+.subscribe-container {
+  position: relative; /* Make the container relative */
+   /* Prevent overflow */
+}
+
+.subscribe-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Aligns background with bottom */
+  width: 100%;
+  height: 50%; /* Adjust height as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 0; /* Ensure background is below the card */
+}
+
+/* Ensure the html and body take the full height of the viewport */
+html, body {
+  height: 100%; /* Ensure full height */
+}
+
+/* Wrapper for all content excluding the footer */
+.main-content {
+  flex-grow: 1; /* This ensures the content takes up all available space */
+}
+
+/* Footer Styles */
+.footer {
+  /* background-color: #333;  */
+  color: #fff; /* Text color */
+  width: 100%; /* Ensure full width */
+  padding: 10px 0; /* Adjust padding for height */
+  text-align: center;
+  font-size: 16px; /* Adjust font size */
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  width: 100vw; /* Maximum width for content */
+  margin: 0 auto; /* Center the footer content */
+}
+
+.footer-item {
+  flex: 1;
+  padding: 0 20px; /* Spacing between footer items */
+}
+
+.footer-item a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+  text-decoration: underline; /* Underline on hover */
+}

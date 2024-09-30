@@ -1,0 +1,158 @@
+/* General Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgb(221, 94, 9);
+  color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 70px;
+  flex-wrap: wrap;
+  z-index: 100;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.navbar-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar-title {
+  font-size: 24px;
+  color: whitesmoke;
+  margin: 0;
+  white-space: nowrap; /* Ensure title stays on one line */
+}
+
+.navbar-slogan {
+  font-size: 14px;
+  color: #ccc; /* Lighter color for slogan */
+  margin: 0;
+  margin-top: 2px; /* Adjust space between title and slogan */
+}
+
+/* Navbar Menu Styling */
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex: 2;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-menu li {
+  margin: 0 10px;
+}
+
+.navbar-menu li .navbar-link {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-menu li .navbar-link svg {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.navbar-menu li .navbar-link:hover {
+  color: #050505;
+  font-weight: bold;
+}
+
+/* User Info Styling */
+.user-info {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info span {
+  font-weight: bold;
+  text-shadow: 0 0 8px #ffffff;
+  font-size: 16px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu li {
+    margin: 5px 0;
+  }
+
+  .navbar-logo {
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-logo {
+    height: 30px;
+  }
+
+  .navbar-title {
+    font-size: 18px;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu li .navbar-link {
+    font-size: 14px;
+  }
+
+  .user-avatar {
+    width: 25px;
+    height: 25px;
+  }
+}
+

@@ -1,0 +1,136 @@
+.car-card {
+  display: flex;
+  flex-direction: row; /* Change to row to align image and details side by side */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Reduced margin */
+  overflow: hidden;
+  width: 90%;
+  max-width: 1000px;
+  padding: 10px; /* Reduced padding */
+}
+
+.car-image {
+  width: 30%; /* Width can remain the same */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Cover will ensure the image fills the box without stretching */
+  border-radius: 8px;
+  margin-right: 10px; /* Reduced margin */
+}
+
+.car-details {
+  display: flex;
+  flex-direction: column; /* Keep details stacked vertically */
+  justify-content: space-between; /* Space details evenly */
+}
+
+.car-title {
+  text-align: left; /* Align text to the left */
+  font-weight: bold;
+  color: #070707;
+  margin: 5px 0; /* Reduced margin */
+}
+
+.car-price {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #e00707;
+  text-align: left;
+  margin: 5px 0; /* Reduced margin */
+}
+
+/* Other existing styles remain the same */
+
+
+.see-more-btn {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.see-more-btn:hover {
+  background-color: #0056b3;
+}
+
+.inquiry-btn {
+  background-color: #ec6409;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.inquiry-btn:hover {
+  background-color: #c94b00;
+}
+
+.car-specs-table {
+  width: 100%;
+  margin-bottom: 15px;
+  border-collapse: collapse;
+}
+
+.car-specs-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  font-weight: bold;
+}
+
+
+.next-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin: 20px auto; /* Center the button */
+  cursor: pointer;
+  display: block; /* Make it a block element to center */
+  transition: background-color 0.3s;
+}
+
+.next-btn:hover {
+  background-color: #0056b3;
+}
+
+.back-btn {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin: 20px 10px; /* Space between buttons */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
+
+.next-btn {
+  background-color: #080808;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin: 20px 10px; /* Space between buttons */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-btn:hover {
+  background-color: #0056b3;
+}
