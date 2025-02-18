@@ -1,4 +1,43 @@
-.dashboard-sections {
+.admin-dashboard {
+  padding: 20px;
+}
+
+.admin-dashboard h2 {
+  text-align: center;
+}
+
+.admin-dashboard form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard input, .admin-dashboard textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.admin-dashboard button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.admin-dashboard ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.admin-dashboard li {
+  margin: 5px 0;
+}
+
+
+
+
+/* .dashboard-sections {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -25,4 +64,4 @@
   .widget div {
     margin-bottom: 10px;
   }
-  
+   */
